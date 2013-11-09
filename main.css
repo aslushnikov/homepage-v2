@@ -5,9 +5,20 @@ body {
     font-family: "Helvetica";
 }
 
+@media (min-width: 720px) {
+    body #content {
+        width: 720px;
+    }
+}
+
+@media (max-width: 720px) {
+    body #content {
+        width: 100%;
+    }
+}
+
 body #content {
     text-align: center;
-    width: 720px;
     height: 100%;
     margin: 0 auto;
     border-style: solid;
