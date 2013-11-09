@@ -5,28 +5,32 @@
 
 .reference {
     opacity: 0;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-name: drop;
 }
 
 .reference.email {
-    -webkit-animation: drop 1s ease 0s forwards;
+    -webkit-animation-delay: 0s;
 }
 
 .reference.twitter {
-    -webkit-animation: drop 1s ease 0.1s forwards;
+    -webkit-animation-delay: 0.05;
 }
 
 .reference.facebook {
-    -webkit-animation: drop 1s ease 0.2s forwards;
+    -webkit-animation-delay: 0.10s;
 }
 
 .reference.gplus {
-    -webkit-animation: drop 1s ease 0.3s forwards;
+    -webkit-animation-delay: 0.15s;
 }
 
 .reference.github {
-    -webkit-animation: drop 1s ease 0.4s forwards;
+    -webkit-animation-delay: 0.2s;
 }
 
 .reference.linkedin {
-    -webkit-animation: drop 1s ease 0.5s forwards;
+    -webkit-animation-delay: 0.25s;
 }
