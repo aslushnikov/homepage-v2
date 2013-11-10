@@ -22,7 +22,7 @@
 }
 
 .reference {
-    opacity: 0;
+    -webkit-opacity: 0;
     -webkit-animation-duration: 0.5s;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
