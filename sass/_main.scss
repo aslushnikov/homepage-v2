@@ -20,6 +20,7 @@ body {
 }
 
 body #content {
+    padding-top: 5em;
     text-align: center;
     height: 100%;
     margin: 0 auto;
@@ -29,18 +30,15 @@ body #content {
     background-color: rgb(243, 243, 243);
 }
 
-.face img{
-    @include border-radius(4px);
-    margin-top: 2em;
-    border-radius: 10px;
-    width: 250px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(200, 200, 200);
-}
-
-.face .name {
-    font-size: 14px;
+.face {
+    img {
+        @include border-radius(4px);
+        border-radius: 10px;
+        width: 250px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(200, 200, 200);
+    }
 }
 
 .reference {
@@ -58,5 +56,6 @@ footer {
     text-align: center;
     width: 100%;
     position: fixed;
-    bottom: 0px;
+    bottom: 1ex;
+    font-size: 10px;
 }
