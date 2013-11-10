@@ -41,15 +41,17 @@ body #content {
     }
 }
 
-.reference {
-    display: inline-block;
-    font-size: 14px;
-    margin-top: 1em;
-    margin-left: 1em;
-}
+.social {
+    margin-top: 2em;
+    .reference {
+        display: inline-block;
+        font-size: 14px;
+        margin-left: 1em;
+    }
 
-.reference:first-child {
-    margin-left: 0em;
+    .reference:first-child {
+        margin-left: 0em;
+    }
 }
 
 footer {
