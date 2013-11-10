@@ -1,4 +1,22 @@
-@-webkit-keyframes drop {
+@import "compass/css3/transition";
+
+@mixin keyframes( $animationName )
+{
+    @-webkit-keyframes $animationName {
+        @content;
+    }
+    @-moz-keyframes $animationName {
+        @content;
+    }
+    @-o-keyframes $animationName {
+        @content;
+    }
+    @keyframes $animationName {
+        @content;
+    }
+}
+
+@include keyframes( drop ) {
     0% { -webkit-transform: scale(0); opacity: 1;}
     100% { -webkit-transform: scale(1); opacity: 1;}
 }
