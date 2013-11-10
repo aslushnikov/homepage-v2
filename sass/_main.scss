@@ -1,3 +1,5 @@
+@import "compass/css3/border-radius";
+
 body {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
@@ -5,13 +7,13 @@ body {
     font-family: "Helvetica";
 }
 
-@media (min-width: 720px) {
+@media (min-device-width: 720px) {
     body #content {
         width: 720px;
     }
 }
 
-@media (max-width: 720px) {
+@media (max-device-width: 720px) {
     body #content {
         width: 100%;
     }
@@ -28,6 +30,7 @@ body #content {
 }
 
 .face img{
+    @include border-radius(4px);
     margin-top: 2em;
     border-radius: 10px;
     width: 250px;
