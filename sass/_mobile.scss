@@ -33,12 +33,22 @@
         .reference {
             display: inline-block;
             font-size: 14px;
-            margin-bottom: 1ex;
-            width: 30%;
+            width: 20%;
+            a {
+                @include width-equal-height(100%);
+            }
         }
 
-        .reference:first-child {
-            margin-left: 0em;
+        .reference:nth-child(2) {
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .reference:nth-child(5) {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 5%;
         }
     }
 

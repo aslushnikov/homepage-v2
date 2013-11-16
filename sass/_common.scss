@@ -1,3 +1,11 @@
+@mixin width-equal-height( $value )
+{
+    position: relative;
+    width: $value;
+    height: 0;
+    padding-bottom: $value;
+}
+
 body {
     background-color: rgb(233, 233, 233);
     font-family: "Helvetica";
