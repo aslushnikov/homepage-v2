@@ -1,16 +1,25 @@
-@mixin width-equal-height( $value )
-{
-    position: relative;
-    width: $value;
-    height: 0;
-    padding-bottom: $value;
+@import "compass/css3/border-radius";
+
+* {
+    box-sizing: border-box;
 }
 
 body {
     background-color: rgb(233, 233, 233);
     font-family: "Helvetica";
+    #content {
+        text-align: center;
+        background-color: rgb(243, 243, 243);
+        border-style: solid;
+        border-color: rgb(200, 200, 200);
+        border-width: 0px 1px 0px 1px;
+    }
 }
 
-* {
-    box-sizing: border-box;
+.face img {
+    @include border-radius(4px);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(200, 200, 200);
 }
+
