@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
+$content-background-color: rgb(243, 243, 243);
+
 body {
     background-color: rgb(233, 233, 233);
     font-family: "Helvetica";
     #content {
         text-align: center;
-        background-color: rgb(243, 243, 243);
+        background-color: $content-background-color;
         border-style: solid;
         border-color: rgb(200, 200, 200);
         border-width: 0px 1px 0px 1px;
